@@ -1,0 +1,29 @@
+.page {
+  font-family: "Poppins", sans-serif;
+  color:#FFFFFF;
+  scroll-behavior: smooth;
+
+&__body {
+  margin: 0;
+}
+
+&__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  color: #1d1d1d;
+}
+
+&__menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+}
+
+
+
+
+
