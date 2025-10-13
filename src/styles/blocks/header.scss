@@ -1,8 +1,10 @@
 .header {
+  // display: none;
   box-sizing: border-box;
+
   /* padding: 24px 20px 40px; */
   height: 100vh;
-  background-image: url(./../../images/header-bg.png);
+  background-image: url(../images/header-bg.png);
   background-size: cover;
   background-position: top right -50px;
 }
@@ -13,7 +15,6 @@
   align-items: center;
 }
 
-
 .header__title {
   height: calc(100vh - 40px);
   display: flex;
@@ -21,11 +22,20 @@
   align-items: center;
   margin-top: 88px;
   font-size: 36px;
+
+  @include on-tablet {
+    font-size: 64px;
+  }
+
+  @include content-padding-inline;
+
   line-height: 100%;
   font-weight: 700;
   letter-spacing: -1.5px;
 }
-.header__bottom {
-  padding: 0 20px 40px;
-}
 
+.header__bottom {
+  padding-bottom: 40px;
+
+  @include content-padding-inline;
+}

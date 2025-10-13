@@ -1,16 +1,31 @@
 .top-bar {
-  padding: 24px 20px;
+  padding-block: 36px;
+
+  @include content-padding-inline;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include on-tablet {
+    padding-block: 36px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__logo {
+    display: flex;
+    width: 130px;
+    height: 38px;
+    transform: scale(1);
+  }
 }
 
-.top-bar__icons {
-  display: flex;
-  gap: 24px;
+.white {
+  @include on-tablet {
+    transform: scale(1.2);
+  }
 }
-
-.top-bar__logo{
-  display: flex;
-}
-

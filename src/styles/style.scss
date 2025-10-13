@@ -1,3 +1,5 @@
+@import './utils/variables';
+@import './utils/mixins';
 @import 'blocks/page';
 @import 'blocks/header';
 @import 'blocks/top-bar';
@@ -5,10 +7,4 @@
 @import 'blocks/menu';
 @import 'blocks/nav';
 @import 'blocks/footer';
-
-
-
-
-
-
-
+@import 'blocks/section-title';
