@@ -2,12 +2,13 @@
 .section-title {
   margin: 0;
   margin-bottom: 48px;
-  font-weight: 500;
+
   font-size: 32px;
+  font-weight: 500;
   line-height: 100%;
+  color:$text-color;
   text-align: center;
   letter-spacing: -1.5px;
-  color:$text-color;
 
   @include on-tablet {
     font-size: 48px;
@@ -22,16 +23,4 @@
   }
 }
 
-.main {
-  background-color: $main-text-color;
-  display: grid;
-  row-gap: 92px;
-  padding-block: 92px;
 
-  @include content-padding-inline;
-
-   @include on-tablet {
-    row-gap: 120px;
-    padding-block: 120px;
-  }
-}
