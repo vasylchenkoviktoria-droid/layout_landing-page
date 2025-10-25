@@ -1,5 +1,5 @@
 .contacts {
- @include page-grid;
+  @include page-grid;
 
   &__information--details {
     margin: 0;
@@ -17,8 +17,16 @@
   grid-column: 1 / -1;
 }
 
-.contacts__information {
+.contacts__input {
   grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 1 / 4;
+  }
+
+  @include on-desktop {
+    grid-column: 1 / 6;
+  }
 }
 
 .contact__input--main {
@@ -26,6 +34,7 @@
 }
 
 .text_field {
+  box-sizing: border-box;
   width: 100%;
   height: 48px;
   margin: 0;
@@ -34,19 +43,21 @@
   border: 0;
   border-radius: 40px;
 
-  color: #7E7E83;
+  color: #7e7e83;
 }
 
 .message_field {
+  box-sizing: border-box;
+  width: 100%;
   height: 148px;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
-  padding: 14px 16px;
+  padding-left: 16px;
   border: 0;
   border-radius: 16px;
 
-  color: #7E7E83;
+  color: #7e7e83;
 }
 
 .button_field {
@@ -61,4 +72,44 @@
   font-weight: 700;
   color: #1d1d1d;
   text-align: center;
+}
+
+.contacts__information {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 4 / 7;
+  }
+
+  @include on-desktop {
+    grid-column: 8 / 12;
+  }
+}
+
+.contacts__information:hover {
+  color: $text-color_hover;
+}
+
+.button_explore {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 40px;
+
+  font-weight: 700;
+  color: #1d1d1d;
+  text-align: center;
+
+  @include on-tablet {
+    grid-column: 2 / 6;
+  }
+
+  @include on-desktop {
+    grid-column: 5 / 9;
+  }
 }

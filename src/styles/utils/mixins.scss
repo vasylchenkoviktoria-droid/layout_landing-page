@@ -18,8 +18,8 @@
   }
 
   @include on-desktop {
-  max-width: 1260px;
-  margin-inline: auto;
+    max-width: 1260px;
+    margin-inline: auto;
   }
 }
 
@@ -47,7 +47,7 @@
     column-gap: 24px;
   }
 
-   @include on-desktop {
+  @include on-desktop {
     --columns: 12;
   }
 }

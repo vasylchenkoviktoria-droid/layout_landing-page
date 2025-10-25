@@ -34,7 +34,7 @@
 
       background-color: $main-text-color;
 
-      transition: transform 0.3s;
+      transition: transform $speed-of-animations;
     }
 
     &:hover::after {
