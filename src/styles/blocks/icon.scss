@@ -27,3 +27,23 @@
     background-image: url(../icons/icon-close.svg);
   }
 }
+
+.top-bar__icons__phone {
+  position: relative;
+
+  &__number {
+    position: absolute;
+
+    color: $text-color;
+    white-space: nowrap;
+
+    visibility: hidden;
+    opacity: 0;
+    background-color: $background-color;
+  }
+
+  .icon--phone:hover + &__number {
+    visibility: visible;
+    opacity: 1;
+  }
+}

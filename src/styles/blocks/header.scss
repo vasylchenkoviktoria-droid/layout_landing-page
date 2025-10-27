@@ -1,7 +1,16 @@
 .header {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
   background-image: url(../images/header-bg.png);
-  background-position: top right -300px;
+  background-position: center;
   background-size: cover;
+}
+
+.container {
+  @include content-padding-inline;
 }
 
 .header__content {
@@ -18,23 +27,30 @@
 }
 
 .header__title {
-  display: flex;
+  position: absolute;
+  bottom: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+
   align-items: center;
   justify-content: center;
-
-  height: calc(100vh - 40px);
-  margin-top: 88px;
 
   font-size: 36px;
   font-weight: 700;
   line-height: 100%;
+  color: $text-color;
   letter-spacing: -1.5px;
+  white-space: nowrap;
 
   @include on-tablet {
+    bottom: 130px;
     font-size: 64px;
   }
 
-  @include content-padding-inline;
+  @include on-desktop {
+    bottom: 203px;
+    font-size: 80px;
+  }
 }
 
 .header__bottom {

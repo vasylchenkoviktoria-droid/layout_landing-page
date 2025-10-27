@@ -43,7 +43,9 @@
   border: 0;
   border-radius: 40px;
 
-  color: #7e7e83;
+  color: $input-field-color;
+
+  outline: none;
 }
 
 .message_field {
@@ -57,7 +59,9 @@
   border: 0;
   border-radius: 16px;
 
-  color: #7e7e83;
+  color: $input-field-color;
+
+  outline: none;
 }
 
 .button_field {
@@ -74,8 +78,26 @@
   text-align: center;
 }
 
+.button_field:hover {
+  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+}
+
+.button_field:active {
+  box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
+}
+
+.contacts__link {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: $input-field-color;
+}
+
 .contacts__information {
   grid-column: 1 / -1;
+  text-decoration: none;
 
   @include on-tablet {
     grid-column: 4 / 7;
@@ -96,20 +118,29 @@
   width: 100%;
   height: 56px;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
   padding: 0;
   border: 0;
   border-radius: 40px;
 
   font-weight: 700;
-  color: #1d1d1d;
+  color: $main-text-color;
   text-align: center;
 
   @include on-tablet {
     grid-column: 2 / 6;
+    margin-bottom: 120px;
   }
 
   @include on-desktop {
     grid-column: 5 / 9;
+    margin-bottom: 180px;
+  }
+
+  .button_explore:hover {
+    box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.4);
+  }
+  .button_explore:active {
+    box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 0.64);
   }
 }

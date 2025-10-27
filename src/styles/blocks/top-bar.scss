@@ -15,14 +15,27 @@
 
   &__logo {
     transform: scale(1);
+
     display: flex;
+
     width: 130px;
     height: 38px;
+
+    transition-duration: $speed-of-animations;
+  }
+
+  &__logo:hover {
+    transform: scale(1.2);
   }
 }
 
 .white {
   @include on-tablet {
     transform: scale(1.2);
+    transition-duration: $speed-of-animations;
   }
+}
+
+.white:hover {
+  transform: scale(1.4);
 }
