@@ -7,6 +7,9 @@
     padding: 0;
     list-style: none;
   }
+  &__information--details:hover {
+    color: $text-color_hover;
+  }
 }
 
 .first_line {
@@ -43,10 +46,27 @@
   border: 0;
   border-radius: 40px;
 
-  color: $input-field-color;
+  color: $input-text-color-default;
 
   outline: none;
 }
+
+.text_field:focus {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-focus;
+  color: $input-text-color-focus;
+}
+
+.text_field:hover {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-hover;
+  color: $input-text-color-focus;
+}
+
+.text_field:not(:placeholder-shown) {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-focus;
+  color: $input-text-color-focus;
+}
+
+
 
 .message_field {
   box-sizing: border-box;
@@ -59,10 +79,27 @@
   border: 0;
   border-radius: 16px;
 
-  color: $input-field-color;
+  color: $input-text-color-default;
 
   outline: none;
 }
+
+
+.message_field:focus {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-focus;
+  color: $input-text-color-focus;
+}
+
+.message_field:hover {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-hover;
+  color: $input-text-color-focus;
+}
+
+.message_field:not(:placeholder-shown) {
+  border: $input-border-width-focus $input-border-style-focus $input-border-color-focus;
+  color: $input-text-color-focus;
+}
+
 
 .button_field {
   width: 100%;

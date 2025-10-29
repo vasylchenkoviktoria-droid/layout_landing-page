@@ -39,3 +39,30 @@
 .white:hover {
   transform: scale(1.4);
 }
+
+.top-bar__icons__phone {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &__number {
+
+    color: $text-color;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    background-color: none;
+
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+  }
+
+  &:hover &__number {
+    visibility: visible;
+    opacity: 1;
+  }
+}
