@@ -46,19 +46,17 @@
   align-items: center;
 
   &__number {
-
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
     color: $text-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     white-space: nowrap;
+
     visibility: hidden;
     opacity: 0;
     background-color: none;
-
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    line-height: 16px;
-    text-transform: uppercase;
-
   }
 
   &:hover &__number {
